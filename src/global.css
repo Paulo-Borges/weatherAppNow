@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: black;
+  color: white;
+}
+
 @theme {
   --color-Neutral: hsl(243, 96%, 9%);
   --color-Neutral-800: hsl(243, 27%, 20%);
