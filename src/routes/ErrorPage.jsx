@@ -5,9 +5,9 @@ import Navbar from "../components/Navbar";
 
 const ErrorPage = () => {
   return (
-    <div className="max-w-[1440px] bg-Blue-700">
+    <div className="max-w-[1440px] bg-Blue-900 h-screen">
       <Navbar />
-      <div className="flex flex-col justify-center items-center ">
+      <div className="flex flex-col justify-center items-center mt-10">
         <img src={Error} alt="error" className="m-auto mb-4" />
         <h1 className="text-4xl mb-3">Something went wrong</h1>
         <p className="text-sm text-white/80">

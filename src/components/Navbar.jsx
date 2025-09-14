@@ -11,7 +11,7 @@ const Navbar = () => {
       </div>
       <button className="flex items-center gap-2 bg-Neutral-600 px-2 py-0.5 rounded cursor-pointer">
         <img src={Units} alt="logo" className="w-3 h-3" />
-        <span className="text-sm">Units</span>
+        <span className="text-xs py-1">Units</span>
         <img src={Dropdown} alt="logo" className="w-3 h-3" />
       </button>
     </div>
