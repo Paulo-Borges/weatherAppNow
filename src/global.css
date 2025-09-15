@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 :root {
@@ -28,4 +29,11 @@ body {
   --color-Blue-500: hsl(233, 67%, 56%);
   --color-Blue-700: hsl(248, 70%, 36%);
   --color-Blue-900: #110457;
+}
+.bg-container {
+  background-image: url("../public/bg-today-large.svg");
+  background-size: cover;
+  background-position: center;
+  height: 30%;
+  width: 60%;
 }

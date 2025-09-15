@@ -2,17 +2,19 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
 import Search from "../public/icon-search.svg";
+import Temper from "./components/Temper";
+import Daily from "./components/Daily";
 
 function App() {
   return (
     <div className="max-w-[1440px] bg-Blue-900 h-screen">
       <Navbar className="" />
       <div className="flex flex-col justify-center items-center">
-        <h1 class="text-4xl font-semibold text-white mb-8">
+        <h1 class="text-4xl font-semibold text-white mb-6">
           How´s the sky looking today?
         </h1>
-        <div className="flex justify-center items-center gap-3 mb-8">
-          <div className="flex justify-start items-center pl-3 bg-Neutral-300 w-[350px] p-1 rounded">
+        <div className="flex justify-center items-center gap-3 mb-6">
+          <div className="flex justify-start items-center pl-3 bg-Neutral-600 w-[350px] p-1 rounded">
             <div>
               <img
                 src={Search}
@@ -34,9 +36,11 @@ function App() {
             </button>
           </div>
         </div>
-        <p className="mb-8">No search result found</p>
+        <p className="mb-8 hidden">No search result found</p>
       </div>
       <Outlet />
+      <Temper />
+      <Daily />
       <Footer />
     </div>
   );
